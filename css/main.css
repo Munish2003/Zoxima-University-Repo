@@ -1,0 +1,354 @@
+ 
+ 
+ 
+ *{
+    margin: 0;
+    padding: 0;
+
+    font-family: "General Sans";
+    box-sizing:border-box;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+    
+}
+
+
+#minicircle{
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.6s;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    z-index: 9999;
+    border-radius: 50%;
+    background-color: #fff;
+
+}
+
+
+.bounding{
+    width: fit-content;
+    /* background-color: red; */
+    overflow: hidden;
+}
+.bounding .boundingelem{
+    transform: translateY(100%);
+}
+
+#main{
+width: 100%;
+background-color: rgb(0, 0, 0);
+
+}
+
+#hero{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    color:#fff;
+}
+
+#nav{
+    padding: 20px 40px;
+    color:#fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+
+}
+
+
+
+#nav a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+#heading{
+    margin-top: 90px;
+}
+
+#heading h1{
+    line-height: 1;
+    margin-left: 30px;
+    opacity: 0.6;
+    font-size: 9vw;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+#heading #secondh1{
+    margin-left: 200px;
+}
+.blockText{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    width: fit-content;
+
+}
+.blockText h5{
+    text-align: right;
+    text-transform:uppercase;
+    font-size: 15px;
+}
+#chotiheadings{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    margin-top: 30px;
+    padding-right: 20px;
+}
+#chotiheadings h5{
+text-align: right;
+text-transform: uppercase;
+font-size: 1vw;
+margin-top: .5vw;
+}
+#herofooter{
+    position: absolute  ;
+    width: 100%;
+    bottom: 3%;
+    padding: 0 2vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#herofooter a{
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+#herofooter #iconset{
+    display: flex;
+    gap: 5px;
+}
+
+#herofooter .circle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25px;
+    height: 25px;
+    background-color: #888;
+    border-radius: 50%;
+}
+
+#second{
+    color: #fff;
+    padding-right: 10vw;
+    width: 100%;
+    padding-top: 200px;
+    background-color: black;
+    /* height: 100vh; */
+}
+
+.elem{
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 3.5vw 3vw;
+    padding-right: 0;
+    border-top:1px solid #888 ;
+}
+
+.elem h1{
+    text-transform: uppercase;
+    font-size: 7.6vw;
+    opacity: .7;
+}
+#last{
+  border-bottom: 1px solid #888;
+}
+
+.elem img{
+    opacity: 0;
+    pointer-events: none;
+    height: 140%;
+    z-index: 999;
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
+
+#about{
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between ; */
+    color: #fff;
+    gap: 50px;
+    padding: 10vw 10vw;
+    padding-left: 40vw;
+    width: 100%;
+    background-color: black;
+}
+
+#about img{
+    width: 200px;
+}
+
+#textabout{
+    width: 25rem;
+}
+
+#textabout h5{
+    opacity: 0.6;
+    text-transform: uppercase;
+    margin-bottom:10px;
+}
+
+#textabout  p{
+    line-height: 1.7;
+    margin-bottom: 30px;
+}
+
+#textabout a{
+    padding: 12px 22px;
+    border: 1px solid #fff;
+    border-radius: 100px;
+    text-decoration: none;
+    /* font-size: 12px; */
+    color: #fff;
+    transition: backgorund-color,0.3s;
+}
+#textabout a:hover{
+    background-color: #fff;
+    color: black;
+}
+
+#subscribe{
+    color: #fff;
+    padding: 20px 30px;
+    background-color: black;
+    padding-bottom: 7vw;
+}
+#subscribe h5{
+text-transform: uppercase;
+opacity: .6;
+}
+
+#subscribe h3{
+    text-transform: uppercase;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+#footer{
+    background-color: black;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    padding: 40px 30px;
+}
+#footerleft{
+    
+    display: flex;
+    gap: 20px;
+}
+#footerright{
+    margin-right: 150px;
+    display: flex;
+    gap: 20px;
+}
+
+#footer a{
+    color: #fff;
+    text-decoration:none ;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+
+#call-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+  .vapi-btn-is-idle {
+    background-image: url('/images/call-outgoing\ \(4\).png'); /* Your SVG background */
+    background-size: cover;        /* Cover the entire button */
+    background-position: center;   /* Center the background image */
+    background-repeat: no-repeat;  /* Prevent repeating */
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%; /* Optional: makes button circular */
+    position: relative;
+  }
+ 
+  .vapi-btn-is-idle::after {
+    content: "";
+    background-image: url('/images/call-outgoing\ \(4\).png'); /* Small centered icon */
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 24px;
+    height: 24px;
+    display: block;
+  }
+  .vapi-btn-is-active {
+    background-image: url('/images/phone-slash.png'); /* Replace with your call cut background image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    position: relative;
+  }
+  
+  .vapi-btn-is-active::after {
+    content: "";
+    background-image: url('/images/phone-slash.png'); /* Small icon */
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 24px;
+    height: 24px;
+    display: block;
+  }
+  .vapi-btn-is-loading {
+    background-image: url('/images/call-duration.png'); /* Replace with your loading background SVG */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    position: relative;
+  }
+  
+  .vapi-btn-is-loading::after {
+    content: "";
+    background-image: url('/images/call-duration.png'); /* Small loading icon */
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 24px;
+    height: 24px;
+    display: block;
+  }
+  .vapi-btn {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    will-change: transform;
+  }
+  
+  .vapi-btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Optional smooth shadow */
+  }
+  
