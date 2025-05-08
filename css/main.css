@@ -274,7 +274,7 @@ opacity: .6;
   }
 
   .vapi-btn-is-idle {
-    background-image: url('/images/call-outgoing\ \(4\).png'); /* Your SVG background */
+    background-image: url('https://img.icons8.com/ios-filled/24/ffffff/phone.png'); /* Your SVG background */
     background-size: cover;        /* Cover the entire button */
     background-position: center;   /* Center the background image */
     background-repeat: no-repeat;  /* Prevent repeating */
@@ -289,7 +289,7 @@ opacity: .6;
  
   .vapi-btn-is-idle::after {
     content: "";
-    background-image: url('/images/call-outgoing\ \(4\).png'); /* Small centered icon */
+    background-image: url('https://img.icons8.com/ios-filled/24/ffffff/phone.png'); /* Small centered icon */
     background-size: contain;
     background-repeat: no-repeat;
     width: 24px;
