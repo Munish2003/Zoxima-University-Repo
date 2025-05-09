@@ -297,7 +297,7 @@ opacity: .6;
     display: block;
   }
   .vapi-btn-is-active {
-    background-image: url('/images/phone-slash.png'); /* Replace with your call cut background image */
+    background-image: url('https://img.icons8.com/ios-filled/24/ffffff/phone.png'); /* Replace with your call cut background image */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -312,7 +312,7 @@ opacity: .6;
   
   .vapi-btn-is-active::after {
     content: "";
-    background-image: url('/images/phone-slash.png'); /* Small icon */
+    background-image: url('https://img.icons8.com/ios-filled/24/ffffff/phone.png'); /* Small icon */
     background-size: contain;
     background-repeat: no-repeat;
     width: 24px;
@@ -320,7 +320,7 @@ opacity: .6;
     display: block;
   }
   .vapi-btn-is-loading {
-    background-image: url('/images/call-duration.png'); /* Replace with your loading background SVG */
+    background-image: url('https://img.icons8.com/ios-filled/24/ffffff/phone.png'); /* Replace with your loading background SVG */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -335,7 +335,7 @@ opacity: .6;
   
   .vapi-btn-is-loading::after {
     content: "";
-    background-image: url('/images/call-duration.png'); /* Small loading icon */
+    background-image: url('https://img.icons8.com/ios-filled/24/ffffff/phone.png'); /* Small loading icon */
     background-size: contain;
     background-repeat: no-repeat;
     width: 24px;
